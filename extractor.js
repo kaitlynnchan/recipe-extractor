@@ -4,12 +4,74 @@ console.log("extractor running");
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
     if(message.action == 'run_extractor'){
         // gets tab url from background
-        console.log(message.url);
-        $("script").load(message.url);
+        // console.log($("script").load(message.url));
+        console.log("running extractor");
+        $.ajax({
+            type: "GET",
+            url: message.url,
+            dataType: "html",
+            success: function(data){
+                console.log($(data));
+                // var scriptElements = $("script[type='application/ld+json']");
+                var scriptStr = $("script[type='application/ld+json']").text();
+                var recipeIngredientIndx = scriptStr.indexOf("recipeIngredient");
+                if(recipeIngredientIndx != -1){
+                    var prevBracket = getPrevBraketIndexes(scriptStr, recipeIngredientIndx);
+                    var nextBracket = getNextBraketIndexes(scriptStr, recipeIngredientIndx);
+                    console.log(prevBracket + "," + nextBracket);
+                    var newScript = scriptStr.substring(prevBracket, nextBracket+1);
+                    console.log(newScript);
+                    var json = JSON.parse(newScript);
+                    var recipeIngredient = json.recipeIngredient;
+                    console.log(recipeIngredient);
+                }
+                // var scriptJson = JSON.parse( $("script[type='application/ld+json']").text() );
+                // var recipeIngredients = scriptJson.graph.recipeIngredient;
+                // console.log(scriptJson);
+                // console.log(scriptJson.recipeIngredient);
+                // var jsonld = $(scriptElements).find("")
+            },
+            error: function(error){
+                console.log(error);
+            }
+        });
+        
         console.log("extractor received message from background");
     }
 });
 
+
+function getPrevBraketIndexes(str, startIndex) {
+    let numCloseBracket = 0;
+    for(let i = startIndex; i >= 0; i--){
+        if(str[i] == '{'){
+            if(numCloseBracket > 0){
+                numCloseBracket--;
+            } else {
+                return i;
+            }
+        } else if (str[i] == '}'){
+            numCloseBracket++;
+        }
+    }
+    return -1;
+}
+
+function getNextBraketIndexes(str, startIndex) {
+    let numOpenBracket = 0;
+    for(let i = startIndex; i < str.length; i++){
+        if(str[i] == '}'){
+            if(numOpenBracket > 0){
+                numOpenBracket--;
+            } else {
+                return i;
+            }
+        } else if (str[i] == '{'){
+            numOpenBracket++;
+        }
+    }
+    return -1;
+}
 // $(document).ready(function(){
     
 // });
