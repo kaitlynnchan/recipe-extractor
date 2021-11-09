@@ -19,3 +19,13 @@ window.onload = function(){
         // });
     });
 };
+
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
+    if(message.action == 'add_ingredients'){
+        var ingredients = message.ingredients;
+        $.each(ingredients, function(key, value){
+            console.log(value);
+            $(".recipe .ingredients ul").append("<li>" + value + "</li>");
+        });
+    }
+});

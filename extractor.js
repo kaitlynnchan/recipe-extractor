@@ -18,13 +18,16 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
                 if(recipeIngredientIndx != -1){
                     var prevBracket = getPrevBraketIndexes(scriptStr, recipeIngredientIndx);
                     var nextBracket = getNextBraketIndexes(scriptStr, recipeIngredientIndx);
-                    console.log(prevBracket + "," + nextBracket);
                     var newScript = scriptStr.substring(prevBracket, nextBracket+1);
-                    console.log(newScript);
                     var json = JSON.parse(newScript);
                     var recipeIngredient = json.recipeIngredient;
                     console.log(recipeIngredient);
+
+                    chrome.runtime.sendMessage({action:"add_ingredients", ingredients:recipeIngredient});
+                    
+                    var recipeInstruction = json.recipeInstructions;
                 }
+                var recipeInstructions;
                 // var scriptJson = JSON.parse( $("script[type='application/ld+json']").text() );
                 // var recipeIngredients = scriptJson.graph.recipeIngredient;
                 // console.log(scriptJson);
