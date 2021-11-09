@@ -21,11 +21,28 @@ window.onload = function(){
 };
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
+    if(message.action == 'add_name'){
+        $(".recipe .name").append("<h1>" + message.name + "</h1>");
+    }
+
     if(message.action == 'add_ingredients'){
         var ingredients = message.ingredients;
         $.each(ingredients, function(key, value){
             console.log(value);
             $(".recipe .ingredients ul").append("<li>" + value + "</li>");
+        });
+    }
+
+    if(message.action == 'add_instructions'){
+        var instructions = message.instructions;
+        $.each(instructions, function(key, value){
+            console.log("instruction: ");
+            console.log(value);
+            var instruction = value.text;
+            // if(value.length > 1){
+            //     instruction = value.text;
+            // }
+            $(".recipe .instructions ul").append("<li>" + instruction + "</li>");
         });
     }
 });
