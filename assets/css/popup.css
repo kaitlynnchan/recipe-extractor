@@ -5,3 +5,7 @@ body{
 .recipe .instructions ul{
     list-style: auto;
 }
+
+.recipe div{
+    display: none;
+}
