@@ -14,11 +14,11 @@ console.log("background running");
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
     if(message.action == 'run_background'){
-        // sends information of tabs to content
+        // sends tabs information to extractor
         chrome.tabs.query({active: true}, function(tabs){
             console.log(tabs)
-            chrome.tabs.sendMessage(tabs[0].id, {action: "run_content", url: tabs[0].url});  
+            chrome.tabs.sendMessage(tabs[0].id, {action: "run_extractor", url: tabs[0].url});  
         });
+        console.log("background received message");
     }
-    console.log("background received message");
 });

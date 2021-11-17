@@ -1,0 +1,15 @@
+body{
+    width: 96vw;
+}
+
+.recipe .instructions ul{
+    list-style: auto;
+}
+
+.recipe div{
+    display: none;
+}
+
+.time div{
+    padding: 0 10px;
+}

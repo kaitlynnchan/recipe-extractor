@@ -9,14 +9,17 @@
                 "<all_urls>"
             ],
             "js": [
-                "content.js"
+                "content.js",
+                "third_party/jquery-3.6.0.min.js",
+                "extractor.js"
             ]
         }
     ],
 
     "background": {
         "scripts": [
-            "background.js"
+            "background.js",
+            "third_party/jquery-3.6.0.min.js"
         ]
     },
 

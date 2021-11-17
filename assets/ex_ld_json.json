@@ -1,0 +1,355 @@
+{
+    "@context":"https://schema.org",
+    "@graph":[
+        {
+            "@type":"Organization",
+            "@id":"https://www.seasonsandsuppers.ca/#organization",
+            "name":"Seasons and Suppers",
+            "url":"https://www.seasonsandsuppers.ca/",
+            "sameAs":["https://www.facebook.com/SeasonsandSuppers","https://www.instagram.com/seasonsandsuppers/","https://www.youtube.com/channel/UC_SGuDEP8Cqghy1X3kT1V1g","https://www.pinterest.com/SeasonsSuppers/","https://twitter.com/SeasonsSuppers"],
+            "logo":{
+                "@type":"ImageObject",
+                "@id":"https://www.seasonsandsuppers.ca/#logo",
+                "inLanguage":"en-US",
+                "url":"https://www.seasonsandsuppers.ca/wp-content/uploads/2020/02/new-logo-1500.png",
+                "contentUrl":"https://www.seasonsandsuppers.ca/wp-content/uploads/2020/02/new-logo-1500.png",
+                "width":1500,
+                "height":270,
+                "caption":"Seasons and Suppers"
+            },
+            "image":{
+                "@id":"https://www.seasonsandsuppers.ca/#logo"
+            }
+        },
+        {
+            "@type":"WebSite",
+            "@id":"https://www.seasonsandsuppers.ca/#website",
+            "url":"https://www.seasonsandsuppers.ca/",
+            "name":"Seasons and Suppers",
+            "description":"Simple, seasonal, fresh and delicious recipes",
+            "publisher":{"@id":"https://www.seasonsandsuppers.ca/#organization"},
+            "potentialAction":[
+                {
+                    "@type":"SearchAction",
+                    "target":{
+                        "@type":"EntryPoint",
+                        "urlTemplate":"https://www.seasonsandsuppers.ca/?s={search_term_string}"
+                    },
+                    "query-input":"required name=search_term_string"
+                }
+            ],
+            "inLanguage":"en-US"
+        },
+        {
+            "@type":"ImageObject",
+            "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#primaryimage",
+            "inLanguage":"en-US",
+            "url":"https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200.jpg",
+            "contentUrl":"https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200.jpg",
+            "width":1200,
+            "height":1200,
+            "caption":"homemade cheese bread in loaf pans"
+        },
+        {
+            "@type":"WebPage",
+            "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#webpage",
+            "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/",
+            "name":"Simply Perfect Homemade Cheese Bread - Seasons and Suppers",
+            "isPartOf":{
+                "@id":"https://www.seasonsandsuppers.ca/#website"
+            },
+            "primaryImageOfPage":{
+                "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#primaryimage"
+            },
+            "datePublished":"2013-03-02T16:47:04+00:00",
+            "dateModified":"2021-09-20T16:00:24+00:00",
+            "description":"A delicious soft, homemade cheese bread, made two ways - Cheddar and Herb and Parmesan, garlic and herb. Both made from one batch of dough.",
+            "breadcrumb":{
+                "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#breadcrumb"
+            },
+            "inLanguage":"en-US",
+            "potentialAction":[
+                {
+                    "@type":"ReadAction",
+                    "target":["https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/"]
+                }
+            ]
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#breadcrumb",
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "position":1,
+                    "name":"Home",
+                    "item":"https://www.seasonsandsuppers.ca/"
+                },
+                {
+                    "@type":"ListItem",
+                    "position":2,
+                    "name":"Bread Recipes",
+                    "item":"https://www.seasonsandsuppers.ca/breads/"
+                },
+                {
+                    "@type":"ListItem",
+                    "position":3,
+                    "name":"Simply Perfect Homemade Cheese Bread"
+                }
+            ]
+        },
+        {
+            "@type":"Article",
+            "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#article",
+            "isPartOf":{
+                "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#webpage"
+            },
+            "author":{
+                "@id":"https://www.seasonsandsuppers.ca/#/schema/person/43fbd3d9a2526cfb5c72b6a252fa122f"
+            },
+            "headline":"Simply Perfect Homemade Cheese Bread",
+            "datePublished":"2013-03-02T16:47:04+00:00",
+            "dateModified":"2021-09-20T16:00:24+00:00",
+            "wordCount":2248,
+            "commentCount":416,
+            "publisher":{
+                "@id":"https://www.seasonsandsuppers.ca/#organization"
+            },
+            "image":{
+                "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#primaryimage"
+            },
+            "thumbnailUrl":"https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200.jpg",
+            "keywords":["cheese"],
+            "articleSection":["Bread Recipes","Popular","Yeast Bread Loaf Recipes"],
+            "inLanguage":"en-US",
+            "potentialAction":[
+                {
+                    "@type":"CommentAction",
+                    "name":"Comment",
+                    "target":["https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#respond"]
+                }
+            ]
+        },
+        {
+            "@type":"Person",
+            "@id":"https://www.seasonsandsuppers.ca/#/schema/person/43fbd3d9a2526cfb5c72b6a252fa122f",
+            "name":"Jennifer",
+            "description":"Hi! I'm Jennifer, a home-cook of some 30-plus years. I've learned a lot from getting dinner on the table all these years! I hope to share a bit of what I've learned, as well as my favourite recipes. Most importantly though, I love sharing the joy of cooking at home, with simple, delicious and seasonally-inspired recipes. More about me here ...",
+            "sameAs":["https://www.seasonsandsuppers.ca/about/","SeasonsandSuppers","https://www.instagram.com/seasonsandsuppers/","https://www.pinterest.ca/SeasonsSuppers/","https://twitter.com/SeasonsSuppers","https://youtube.com/c/SeasonsandSuppers"],
+            "url":"https://www.seasonsandsuppers.ca/author/jennifer/"
+        },
+        {
+            "@context":"http://schema.org/",
+            "@type":"Recipe",
+            "name":"Simply Perfect Homemade Cheese Bread (Two Ways)",
+            "author":{
+                "@type":"Person",
+                "name":"Jennifer"
+            },
+            "description":"Delicious, soft cheese bread that can be filled with different cheese fillings - cheddar cheese and herb and Parmesan, Garlic and Herb. If you want to make two of the same loaves, simply double the filling amounts listed below. Makes 2 loaves.",
+            "datePublished":"2013-03-02T11:47:04+00:00",
+            "image":["https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200.jpg","https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200-500x500.jpg","https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200-500x375.jpg","https://www.seasonsandsuppers.ca/wp-content/uploads/2013/03/cheese-bread-1200-480x270.jpg"],
+            "video":{
+                "name":"Homemade Cheese Bread Recipe Video.mp4",
+                "description":"Delicious soft homemade cheese bread, made two ways - a lovely Cheddar cheese version and a Parmesan and Herb version.",
+                "thumbnailUrl":"https://content.jwplatform.com/thumbs/A2GaccUC-720.jpg",
+                "contentUrl":"https://content.jwplatform.com/videos/A2GaccUC.mp4",
+                "uploadDate":"2021-09-20T15:56:59.000Z",
+                "@type":"VideoObject"
+            },
+            "recipeYield":["24","24 servings"],
+            "prepTime":"PT140M",
+            "cookTime":"PT50M",
+            "totalTime":"PT190M",
+            "recipeIngredient":["6 1/2 cups unbleached bread flour ((can use all purpose, flour *see Note 1 below))","2 tsp fine salt  (or a bit more, if using coarse kosher salt)","5 Tbsp white sugar (or 5 Tbsp brown sugar or 3 1/2 Tbsp. honey or agave nectar)","1 cup lukewarm water (about 95F (for even softer bread, you can use 1 cup water leftover from boiling potatoes, cooled))","1 cup plus 2 Tbsp milk or buttermilk  (lukewarm, about 95F)","1 1/2 Tbsp regular instant yeast","1/4 cup unsalted butter  (melted, or the same amount of vegetable/canola oil)","2 cups shredded sharp cheddar cheese","1/4 cup minced fresh herbs (parsley and chives are good choices or a heaping tablespoon of dried herbs)","1 1/2 cups Parmesan cheese (freshly grated)","1/2 tsp garlic powder (or about 2 tsp. minced fresh garlic)","1/4 cup minced fresh herbs (parsley works well, or a heaping tablespoon of dried herbs)","1/4 cup butter (at room temperature)"],
+            "recipeInstructions":[
+                {
+                    "@type":"HowToStep",
+                    "text":"In a mixing bowl or the bowl of a stand mixer, combine the flour, salt and sugar* together. (Tip: If measuring your flour in cups, without a scale, hold back 1 cup to add as needed later). *If you're using honey or agave, add with the liquid ingredients instead.",
+                    "name":"In a mixing bowl or the bowl of a stand mixer, combine the flour, salt and sugar* together. (Tip: If measuring your flour in cups, without a scale, hold back 1 cup to add as needed later). *If you're using honey or agave, add with the liquid ingredients instead.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-0"},
+                {
+                    "@type":"HowToStep",
+                    "text":"In a large measuring cup or bowl, combine the water and buttermilk and whisk in the yeast until dissolved. Add this mixture, along with the melted butter, to the dry ingredients. Mix by hand or with a dough hook, until the mixture is combined, about 2 minutes. Let the dough rest for 5 minutes.",
+                    "name":"In a large measuring cup or bowl, combine the water and buttermilk and whisk in the yeast until dissolved. Add this mixture, along with the melted butter, to the dry ingredients. Mix by hand or with a dough hook, until the mixture is combined, about 2 minutes. Let the dough rest for 5 minutes.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-1"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Continue mixing the dough, adding more flour in very small increments, as needed, until the dough becomes soft, smooth and tacky, but not sticky.",
+                    "name":"Continue mixing the dough, adding more flour in very small increments, as needed, until the dough becomes soft, smooth and tacky, but not sticky.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-2"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Transfer the dough to a lightly floured surface and knead for a couple of minutes, adding more flour only if the dough is sticking to your hands or the work surface, then form dough into a ball. Place the dough in a lightly oiled bowl, cover with plastic wrap and either refrigerate for up to 4 days, or allow to sit at room temperature until doubled in size (about 60-90 minutes). (*Tip: I like to use an 8-cup glass measuring cup, so it&#39;s easy to see when it&#39;s doubled by the markings).",
+                    "name":"Transfer the dough to a lightly floured surface and knead for a couple of minutes, adding more flour only if the dough is sticking to your hands or the work surface, then form dough into a ball. Place the dough in a lightly oiled bowl, cover with plastic wrap and either refrigerate for up to 4 days, or allow to sit at room temperature until doubled in size (about 60-90 minutes). (*Tip: I like to use an 8-cup glass measuring cup, so it&#39;s easy to see when it&#39;s doubled by the markings).",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-3"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Note: If you have refrigerated your dough, remove from the refrigerator 2 hours before you plan to bake, to allow it to come to room temperature.",
+                    "name":"Note: If you have refrigerated your dough, remove from the refrigerator 2 hours before you plan to bake, to allow it to come to room temperature.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-4"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Grease two 8-inch by 4-inch loaf pans and set aside.",
+                    "name":"Grease two 8-inch by 4-inch loaf pans and set aside.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-5"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Divide the dough into 2 equal pieces. Dust each with a bit of flour and then, using a rolling pin, roll into a rectangle approximately 10 inches wide and 16 inches long.",
+                    "name":"Divide the dough into 2 equal pieces. Dust each with a bit of flour and then, using a rolling pin, roll into a rectangle approximately 10 inches wide and 16 inches long.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-6"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"For the Cheddar and Herb Bread: spread the shredded cheddar and herbs evenly over the surface of the dough. Starting with the shortest side, roll the dough up jelly-roll style and pinch the seam together.",
+                    "name":"For the Cheddar and Herb Bread: spread the shredded cheddar and herbs evenly over the surface of the dough. Starting with the shortest side, roll the dough up jelly-roll style and pinch the seam together.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-7"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"For the Parmesan, Garlic and Herb: spread the softened butter over the surface of the dough. Sprinkle evenly with Parmesan, garlic and herbs. Press lightly with the palm of your hand to press the toppings into the butter. Starting with the shortest side, roll the dough up jelly-roll style and pinch the seam together.",
+                    "name":"For the Parmesan, Garlic and Herb: spread the softened butter over the surface of the dough. Sprinkle evenly with Parmesan, garlic and herbs. Press lightly with the palm of your hand to press the toppings into the butter. Starting with the shortest side, roll the dough up jelly-roll style and pinch the seam together.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-8"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"**There is a video above this Recipe Card which shows the process of shaping this cheese bread that you may wish to watch before starting the process**\u00a0",
+                    "name":"**There is a video above this Recipe Card which shows the process of shaping this cheese bread that you may wish to watch before starting the process**\u00a0",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-9"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Shaping: Using a sharp knife, cut the roll of dough down the centre, lengthwise. Rotate each piece so that the cut sides are facing upward and place them side-by-side. Pinch together the farthest end. Keeping the cuts sides facing upwards as much as possible, place the right-side piece over the left-side piece. Straighen it up all up and then repeat, pinching together the end closest to you. If any cheese escapes, just place it back on top. Using a bench scraper or spatula, carefully lift the dough into the greased loaf pan. Repeat with the other dough log, then cover both with a greased piece of plastic wrap and allow to rise until the dough rises to about 1-inch above the side of the pans in the middle.",
+                    "name":"Shaping: Using a sharp knife, cut the roll of dough down the centre, lengthwise. Rotate each piece so that the cut sides are facing upward and place them side-by-side. Pinch together the farthest end. Keeping the cuts sides facing upwards as much as possible, place the right-side piece over the left-side piece. Straighen it up all up and then repeat, pinching together the end closest to you. If any cheese escapes, just place it back on top. Using a bench scraper or spatula, carefully lift the dough into the greased loaf pan. Repeat with the other dough log, then cover both with a greased piece of plastic wrap and allow to rise until the dough rises to about 1-inch above the side of the pans in the middle.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-10"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Preheat oven to 350\u00b0 F. (not fan assisted). Bake for 45-50 minutes total, but after 25 minutes of baking, rotate pans front-to-back in the oven and loosely cover with a piece of aluminum foil if necessary (if bread is already well-browned), to prevent the top from over-browning. Bread should reach about 185\u00b0 internal temperature in the centre.",
+                    "name":"Preheat oven to 350\u00b0 F. (not fan assisted). Bake for 45-50 minutes total, but after 25 minutes of baking, rotate pans front-to-back in the oven and loosely cover with a piece of aluminum foil if necessary (if bread is already well-browned), to prevent the top from over-browning. Bread should reach about 185\u00b0 internal temperature in the centre.",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-11"
+                },
+                {
+                    "@type":"HowToStep",
+                    "text":"Remove the bread from the oven and allow to cool in the pans for a couple of minutes. Run a sharp knife around the edge of the bread and carefully remove the loaves to a cooling rack. Allow the loaves to cool for 1 hour before slicing. *Slicing hot or very warm bread will make for a gummy crumb, so resist the urge and let it cool :)",
+                    "name":"Remove the bread from the oven and allow to cool in the pans for a couple of minutes. Run a sharp knife around the edge of the bread and carefully remove the loaves to a cooling rack. Allow the loaves to cool for 1 hour before slicing. *Slicing hot or very warm bread will make for a gummy crumb, so resist the urge and let it cool :)",
+                    "url":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#wprm-recipe-20224-step-0-12"
+                }
+            ],
+            "aggregateRating":{
+                "@type":"AggregateRating",
+                "ratingValue":"4.99",
+                "ratingCount":"90"
+            },
+            "recipeCategory":["Bread"],
+            "recipeCuisine":["American","Canadian"],
+            "keywords":"best cheese bread recipe, homemade cheese bread recipe",
+            "nutrition":{
+                "@type":"NutritionInformation",
+                "calories":"237 kcal",
+                "carbohydrateContent":"28 g",
+                "proteinContent":"9 g",
+                "fatContent":"9 g",
+                "saturatedFatContent":"5 g",
+                "cholesterolContent":"25 mg",
+                "sodiumContent":"397 mg",
+                "fiberContent":"1 g",
+                "sugarContent":"3 g",
+                "servingSize":"1 serving"
+            },
+            "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#recipe",
+            "isPartOf":{
+                "@id":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#article"
+            },
+            "mainEntityOfPage":"https://www.seasonsandsuppers.ca/soft-cheese-bread-recipe/#webpage"
+        }
+    ]
+}
+
+
+{
+    "@context":"https://schema.org",
+    "@graph":[
+        {
+            "@type":"Organization",
+            "@id":"https://sallysbakingaddiction.com/#organization",
+            "name":"Sallys Baking Addiction",
+            "url":"https://sallysbakingaddiction.com/",
+            "sameAs":[],
+            "logo":{
+                "@type":"ImageObject",
+                "@id":"https://sallysbakingaddiction.com/#logo",
+                "inLanguage":"en-US",
+                "url":"https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/12/sba-logo.png",
+                "contentUrl":"https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/12/sba-logo.png",
+                "width":713,
+                "height":86,
+                "caption":"Sallys Baking Addiction"
+            },
+            "image":{
+                "@id":"https://sallysbakingaddiction.com/#logo"
+            }
+        },
+        {
+            "@type":"WebSite",
+            "@id":"https://sallysbakingaddiction.com/#website",
+            "url":"https://sallysbakingaddiction.com/",
+            "name":"Sally&#039;s Baking Addiction",
+            "description":"Trusted Recipes from a Self-Taught Baker",
+            "publisher":{
+                "@id":"https://sallysbakingaddiction.com/#organization"
+            },
+            "potentialAction":[
+                {
+                    "@type":"SearchAction",
+                    "target":{
+                        "@type":"EntryPoint",
+                        "urlTemplate":"https://sallysbakingaddiction.com/?s={search_term_string}"
+                    },
+                    "query-input":"required name=search_term_string"
+                }
+            ],
+            "inLanguage":"en-US"
+        },
+        {
+            "@type":"WebPage",
+            "@id":"https://sallysbakingaddiction.com/#webpage",
+            "url":"https://sallysbakingaddiction.com/",
+            "name":"Sallys Baking Addiction - Trusted Recipes from a Self-Taught Baker",
+            "isPartOf":{
+                "@id":"https://sallysbakingaddiction.com/#website"
+            },
+            "about":{
+                "@id":"https://sallysbakingaddiction.com/#organization"
+            },
+            "datePublished":"2018-01-03T21:59:36+00:00",
+            "dateModified":"2021-10-04T13:55:13+00:00",
+            "breadcrumb":{
+                "@id":"https://sallysbakingaddiction.com/#breadcrumb"
+            },
+            "inLanguage":"en-US",
+            "potentialAction":[
+                {
+                    "@type":"ReadAction",
+                    "target":["https://sallysbakingaddiction.com/"]
+                }
+            ]
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":"https://sallysbakingaddiction.com/#breadcrumb",
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "position":1,
+                    "name":"Home"
+                }
+            ]
+        }
+    ]
+}
