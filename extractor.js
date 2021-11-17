@@ -12,12 +12,12 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
             success: function(data){
                 console.log($(data));
                 var scriptStr = $("script[type='application/ld+json']").text();
-                if(scriptStr){
-                    getFromldJSON(scriptStr);
+                if(scriptStr && getFromldJSON(scriptStr) == 0){
+                    console.log("information found");
                 }
             },
             error: function(error){
-                console.log(error);
+                console.log("ERROR: " + error);
             }
         });
         
@@ -28,6 +28,10 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
 
 function getFromldJSON(scriptStr) {
     var recipeIndx = scriptStr.indexOf('"@type":"Recipe"');
+    if(recipeIndx == -1){
+        console.log("ls+json recipe not found");
+        return -1;
+    }
     var prevBracket = getPrevBraketIndex(scriptStr, recipeIndx);
     var nextBracket = getNextBraketIndex(scriptStr, recipeIndx);
     var recipeStr = scriptStr.substring(prevBracket, nextBracket + 1);
@@ -53,6 +57,7 @@ function getFromldJSON(scriptStr) {
     if (recipe.recipeInstructions) {
         chrome.runtime.sendMessage({ action: "add_instructions", instructions: recipe.recipeInstructions });
     }
+    return 0;
 }
 
 function getPrevBraketIndex(str, startIndex) {

@@ -270,3 +270,86 @@
         }
     ]
 }
+
+
+{
+    "@context":"https://schema.org",
+    "@graph":[
+        {
+            "@type":"Organization",
+            "@id":"https://sallysbakingaddiction.com/#organization",
+            "name":"Sallys Baking Addiction",
+            "url":"https://sallysbakingaddiction.com/",
+            "sameAs":[],
+            "logo":{
+                "@type":"ImageObject",
+                "@id":"https://sallysbakingaddiction.com/#logo",
+                "inLanguage":"en-US",
+                "url":"https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/12/sba-logo.png",
+                "contentUrl":"https://cdn.sallysbakingaddiction.com/wp-content/uploads/2018/12/sba-logo.png",
+                "width":713,
+                "height":86,
+                "caption":"Sallys Baking Addiction"
+            },
+            "image":{
+                "@id":"https://sallysbakingaddiction.com/#logo"
+            }
+        },
+        {
+            "@type":"WebSite",
+            "@id":"https://sallysbakingaddiction.com/#website",
+            "url":"https://sallysbakingaddiction.com/",
+            "name":"Sally&#039;s Baking Addiction",
+            "description":"Trusted Recipes from a Self-Taught Baker",
+            "publisher":{
+                "@id":"https://sallysbakingaddiction.com/#organization"
+            },
+            "potentialAction":[
+                {
+                    "@type":"SearchAction",
+                    "target":{
+                        "@type":"EntryPoint",
+                        "urlTemplate":"https://sallysbakingaddiction.com/?s={search_term_string}"
+                    },
+                    "query-input":"required name=search_term_string"
+                }
+            ],
+            "inLanguage":"en-US"
+        },
+        {
+            "@type":"WebPage",
+            "@id":"https://sallysbakingaddiction.com/#webpage",
+            "url":"https://sallysbakingaddiction.com/",
+            "name":"Sallys Baking Addiction - Trusted Recipes from a Self-Taught Baker",
+            "isPartOf":{
+                "@id":"https://sallysbakingaddiction.com/#website"
+            },
+            "about":{
+                "@id":"https://sallysbakingaddiction.com/#organization"
+            },
+            "datePublished":"2018-01-03T21:59:36+00:00",
+            "dateModified":"2021-10-04T13:55:13+00:00",
+            "breadcrumb":{
+                "@id":"https://sallysbakingaddiction.com/#breadcrumb"
+            },
+            "inLanguage":"en-US",
+            "potentialAction":[
+                {
+                    "@type":"ReadAction",
+                    "target":["https://sallysbakingaddiction.com/"]
+                }
+            ]
+        },
+        {
+            "@type":"BreadcrumbList",
+            "@id":"https://sallysbakingaddiction.com/#breadcrumb",
+            "itemListElement":[
+                {
+                    "@type":"ListItem",
+                    "position":1,
+                    "name":"Home"
+                }
+            ]
+        }
+    ]
+}
