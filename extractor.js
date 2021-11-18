@@ -1,10 +1,13 @@
 /** Following tutorial: https://www.linkedin.com/pulse/scraping-recipe-websites-ben-awad */
 
 console.log("extractor running");
-chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
+chrome.runtime.onMessage.addListener(MessageHandler);
+
+function MessageHandler(message, sender, sendResponse){
     if(message.action == 'run_extractor'){
         // gets tab url from background
         console.log("running extractor");
+        console.log(message.url);
         $.ajax({
             type: "GET",
             url: message.url,
@@ -23,8 +26,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse){
         
         console.log("extractor received message from background");
     }
-});
-
+}
 
 function getFromldJSON(scriptStr) {
     var recipeIndx = scriptStr.indexOf('"@type":"Recipe"');
